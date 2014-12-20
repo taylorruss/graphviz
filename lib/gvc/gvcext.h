@@ -64,7 +64,7 @@ extern "C" {
     typedef struct gvplugin_available_s gvplugin_available_t;
 
 /*visual studio*/
-#ifdef WIN32
+#ifdef _MSC_VER
 #ifndef GVC_EXPORTS
 __declspec(dllimport) lt_symlist_t lt_preloaded_symbols[];
 #else
