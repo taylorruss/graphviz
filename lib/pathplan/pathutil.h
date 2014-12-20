@@ -32,7 +32,7 @@ extern "C" {
 #endif
 
 /*visual studio*/
-#ifdef WIN32
+#ifdef _MSC_VER
 #ifndef PATHPLAN_EXPORTS
 #define extern __declspec(dllimport)
 #endif
