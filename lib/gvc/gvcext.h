@@ -69,7 +69,7 @@ extern "C" {
 __declspec(dllimport) lt_symlist_t lt_preloaded_symbols[];
 #else
 //__declspec(dllexport) lt_symlist_t lt_preloaded_symbols[];
-#if !defined(LTDL_H)
+#if !defined(LTDL_H) && !defined(__cplusplus)
 lt_symlist_t lt_preloaded_symbols[];
 #endif
 #endif
